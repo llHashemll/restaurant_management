@@ -1,0 +1,180 @@
+
+          <!-- Sidebar -->
+          <div class="sidebar" id="sidebar">
+            <!-- Sidebar user panel (optional) -->
+           
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+              <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+           <!--sidebar init-->
+              <li class="nav-item has-treeview">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-copy"></i>
+                    <p>
+                      إدارة النظام
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="{%url 'users-register' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>المستخدمين</p>
+                      </a>
+                    </li>
+          
+                  </ul>
+            
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{%url 'unit' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>الوحدات</p>
+                    </a>
+                  </li>
+        
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{%url 'Itemstype' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>انواع الاصناف</p>
+                    </a>
+                  </li>
+        
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{%url 'store' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>المخازن</p>
+                    </a>
+                  </li>
+        
+                </ul>
+              </li>
+               
+              <!--input form -->
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    المدخلات
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{%url 'Category' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>الأقسام</p>
+                    </a>
+                  </li>
+        
+                </ul>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{%url 'Items' %}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>الاصناف</p>
+                  </a>
+                </li>
+      
+              </ul>
+            </li>
+             
+                   <!--input form -->
+                   <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-copy"></i>
+                      <p>
+                        المشتريات
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+             
+                    <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="{%url 'supplier' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>الموردين</p>
+                      </a>
+                    </li>
+          
+         <li class="nav-item">
+                      <a href="{%url 'PurchaseInvoice' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>فاتورة المشتريات</p>
+                      </a>
+                    </li>
+                   </ul>
+                </li>
+             
+                   <!--input form -->
+                   <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-copy"></i>
+                      <p>
+                        المبيعات
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+             
+                    <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="{%url 'Customer' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>العملاء</p>
+                      </a>
+                    </li>
+          
+         <li class="nav-item">
+                      <a href="{%url 'SalesInvoice' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>فاتورة المبيعات</p>
+                      </a>
+                    </li>
+                   </ul>
+                </li>
+             
+             
+                   <!--input form -->
+                   <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-copy"></i>
+                      <p>
+                      نقطة المبيعات
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+             
+                    <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="{%url 'device'%}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>الاجهزة</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{%url 'session'%}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>الجلسات</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{% url 'pos' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>نقطة البيع</p>
+                      </a>
+                    </li>
+                   </ul>
+                </li>
+             
+              </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+          </div>
+          <!-- /.sidebar -->
